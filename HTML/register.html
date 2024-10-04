@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Here</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        body{
+            background-color: yellow;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .container{
+            margin:auto;
+            padding: 16px;
+            width:50%;
+            min-height: 100vh;
+            background-color: aliceblue;
+        }
+        
+        input[type="email"],input[type="password"]{
+            margin-bottom: 10px;
+            padding-bottom: 10px;
+            width: 100%;
+            height: 20px;
+        }
+        input[type="email"],input[type="password"]:focus{
+            background-color: silver;
+        }
+        .b1{
+            font-size: large;
+            background-color: red;
+            width: 40%;
+            height: 30px;
+        }
+        .b2{
+            font-size: large;
+            background-color: aquamarine;
+            width: 40%;
+            height: 30px;
+        }
+        .signin{
+            padding: auto;
+            width: 100%;
+            height: 25px;
+            background-color: aquamarine;
+            color: azure;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Register</h1><br>
+        <p>Please fill in the form to create an account</p>
+        <hr><br>
+
+        <form name="register" method="post" action="/createUser">
+        <label for="email"><b>Email</b></label>
+        <input type="email" name="email" id="email" placeholder="Enter valid Email">
+        <label for="password"><b>Password</b></label>
+        <input type="password" name="pass" id="pass" placeholder="Enter your Password">
+        <label for="confirmpassword"><b>Confirm password</b></label>
+        <input type="password" name="cpass" id="cpass" placeholder="Confirm Password">
+        <p>By creating an aacount you agree in our <a href="#"> Terms & Privacy</a></p><br>
+        <button class="b1">Register</button>
+        <button class="b2">Login</button>
+        </form><br>
+    
+    <div class="signin">
+        <p>Already have an account?<a href="#">Sign In</a></p>
+    </div>
+    </div>
+</html>
